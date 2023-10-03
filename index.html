@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Personal Portfolio Website HTML CSS Javascript | Codehal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ajax library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- header design -->
+
+    <div class="header">
+        <a href="#" class="logo">Liston.</a>
+
+        <i class="bx bx-menu" id="menu-icon" onclick="closeNavbar()"></i>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </div>
+
+    <!-- home section design -->
+
+    <section class="home" id="home">
+
+        <div class="home-content">
+            <h1>Hi, I'm <span>Liston Fermi</span></h1>
+            <div class="text-animate">
+                <h3>Fullstack Developer</h3>
+            </div>
+            <p>A self-taught web developer who's in the learning process and focused in building web applications using a technology stack comprised of MongoDB, Express.js, React, and Node.js, allowing for efficient full-stack development</p>
+
+            <div class="btn-box">
+                <a href="https://mail.google.com/mail/u/0/?fs=1&to=listonfermi@gmail.com&su=Interested+in+hiring+you&body=Hello+Liston&tf=cm" target="_blank" class="btn">Hire Me</a>
+                <a href="https://mail.google.com/mail/u/0/?fs=1&to=listonfermi@gmail.com&su=Message+from+portfolio+website&body=Hello+Liston&tf=cm" target="_blank" class="btn">Let's Talk</a>
+            </div>
+        </div>
+
+        <div class="home-soc">
+            <a href="https://www.instagram.com/liston_fermi/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://www.linkedin.com/in/listonfermi/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://github.com/ListonFermi" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://leetcode.com/ListonFermi/" target="_blank"><img width="24" height="24" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-color-tal-revivo.png" alt="external-level-up-your-coding-skills-and-quickly-land-a-job-logo-color-tal-revivo"/></i></a>
+        </div>
+
+        <div class="home-imgHover"></div>
+
+    </section>
+
+    <!-- about section design -->
+
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span > </h2>
+
+        <div class="about-img">
+            <img src="img/about.jpg" alt="">
+            <span class="circle-spin"></span>
+        </div>
+
+        <div class="about-content">
+            <h3>Fullstack Developer!</h3>
+            <p>Proficient in HTML, CSS, and JavaScript for building responsive user interfaces.Currently, I'm immersed in a dynamic learning experience focused on the MERN (MongoDB, Express.js, React, Node.js) stack.</p>
+        
+            <div class="btn-box btns">
+                <a href="https://img.freepik.com/free-vector/neon-style-coming-soon-glowing-background-design_1017-25516.jpg?w=1060&t=st=1696363218~exp=1696363818~hmac=94af7bfdb93605088aa385f2de866f7c243965c7bf821c358b75fe1ba7432480" target="_blank" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- services section design -->
+
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+  
+        <div class="services-container">
+          <div class="services-box">
+            <i class='bx bx-desktop' ></i>
+            <h3>Custom Web Design</h3>
+            <p>I create tailor-made web pages that are both aesthetically pleasing and functionally seamless.</p>
+            <div class="btn-box btns"><a href="https://img.freepik.com/free-vector/neon-style-coming-soon-glowing-background-design_1017-25516.jpg?w=1060&t=st=1696363218~exp=1696363818~hmac=94af7bfdb93605088aa385f2de866f7c243965c7bf821c358b75fe1ba7432480" target="_blank" class="btn">Read More</a></div>
+          </div>
+  
+          <div class="services-box">
+            <i class='bx bx-minus-front' ></i>
+            <h3>Front End Development</h3>
+            <p>Crafting user interfaces with HTML, CSS, and JavaScript to ensure an engaging and visually appealing user experience.</p>
+            <div class="btn-box btns"><a href="https://img.freepik.com/free-vector/neon-style-coming-soon-glowing-background-design_1017-25516.jpg?w=1060&t=st=1696363218~exp=1696363818~hmac=94af7bfdb93605088aa385f2de866f7c243965c7bf821c358b75fe1ba7432480" target="_blank" class="btn">Read More</a></div>
+          </div>
+  
+          <div class="services-box">
+            <i class='bx bx-git-repo-forked' ></i>
+            <h3>Back End Development</h3>
+            <p>Handling server-side logic, databases, and application architecture to ensure smooth functionality and performance.</p>
+            <div class="btn-box btns"><a href="https://img.freepik.com/free-vector/neon-style-coming-soon-glowing-background-design_1017-25516.jpg?w=1060&t=st=1696363218~exp=1696363818~hmac=94af7bfdb93605088aa385f2de866f7c243965c7bf821c358b75fe1ba7432480" target="_blank" class="btn">Read More</a></div>
+          </div>
+  
+        </div>
+      </section>
+
+
+    <!-- projects- section design -->
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <div class="portfolio-container">
+
+          <div class="portfolio-box">
+                <img src="img/portfolio1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Basic homepage clone using HTML&CSS</h4>
+                    <p> I loved recreating the homepage of Amazon using only HTML and CSS as it was my 1st ever step in learning to code. The objective was to replicate the core structure and styling of the Amazon website to showcase my proficiency in front-end development.</p>
+                    <a href="https://github.com/ListonFermi/Amazon-.com--homepage-clone"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+  
+            <div class="portfolio-box">
+                <img src="img/portfolio2.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Basic homepage clone using HTML&CSS</h4>
+                    <p> Creating a basic Pepsi website's homepage clone using HTML and CSS involves replicating some of the core features and layout of the pepsi's offical website.</p>
+                    <a href="https://github.com/ListonFermi/Pepsi.com-Homepage-Clone"><i class='bx bx-link-external'></i></a>  
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/portfolio1_.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4></h4>
+                    <p> </p>
+                    <a href="https://img.freepik.com/free-vector/neon-style-coming-soon-glowing-background-design_1017-25516.jpg?w=1060&t=st=1696363218~exp=1696363818~hmac=94af7bfdb93605088aa385f2de866f7c243965c7bf821c358b75fe1ba7432480" target="_blank"><i class='bx bx-link-external'></i></a>  
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/portfolio1_.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4></h4>
+                    <p></p>
+                    <a href="https://img.freepik.com/free-vector/neon-style-coming-soon-glowing-background-design_1017-25516.jpg?w=1060&t=st=1696363218~exp=1696363818~hmac=94af7bfdb93605088aa385f2de866f7c243965c7bf821c358b75fe1ba7432480" target="_blank"><i class='bx bx-link-external'></i></a>  
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- education section design -->
+
+    <section class="education" id="education">
+        <h2 class="heading">My <span>Journey</span></h2>
+
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">Experience</h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>Sep 2023-Present</div>
+                            <h3>Student-Intern at Brocamp</h3>
+                            <p>Created home page clone of amazon.com and pepsi.com using HTML& CSS.</p>
+                            <p>Built a responsive personal portfolio website.</p>
+                        </div>
+                    </div>
+
+            <div class="education-column">
+                <h3 class="title">Education</h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>2017-2021</div>
+                            <h3>Bachelor of Engineering, Civil Engineering- Anna University</h3>
+                            <p>Did an analysis on threaded joints in reinforcement and experimentally studied the strength, behavior of normal and</p>
+                            <p>coupled bars under tensile loading, flexural loading and torsion acting on them. Worked with a team of four members.</p>
+                            <p> </p>
+                            <p>Designed a full plan for a college building with the structural details.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- skills section design -->
+
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+
+        <div class="skills-row">
+            <div class="skills-column">
+                <h3 class="title">Coding Skills</h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>HTML <span>80%</span></h3>
+                            <div class="bar"><span style="width: 80%;"></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>CSS <span>50%</span></h3>
+                            <div class="bar"><span style="width: 50%;"></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Javascript <span>25%</span></h3>
+                            <div class="bar"><span style="width: 25%;"></span></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-column">
+                <h3 class="title">Professional Skills</h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>Web Design <span>50%</span></h3>
+                            <div class="bar"><span style="width: 50%;"></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Web Development <span>20%</span></h3>
+                            <div class="bar"><span style="width: 20%;"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- contact section design -->
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form id="submit-form" action="">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name" required name="FullName">
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Address" required name="Email">
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="number" placeholder="Phone Number" required name="Phone">
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Subject" name="Subject">
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <div class="textarea-field">
+                <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message" required ></textarea>
+                <span class="focus"></span>
+            </div>
+
+            <div class="btn-box btns">
+                <button type="submit" class="btn" value="Submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+
+    <!-- footer design -->
+
+    <div class="footer">
+        <div class="footer-text">
+            <p>Copyright&copy; 2023 by Liston</p>
+        </div>
+
+        <div class="footer-icontop">
+            <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+          </div>
+    </div>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- submit form scripts -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
