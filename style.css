@@ -687,11 +687,11 @@ section{
         transition-delay: 0s;
     }
 
-    .home-imgHover{
+/*     .home-imgHover{
         pointer-events: none;
         background: var(--bg-color);
         opacity: 0.3;
-    }
+    } */
 
     .navbar a {
         display: block;
