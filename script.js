@@ -14,30 +14,6 @@ menuIcon.onclick= () => {
     navbar.classList.toggle('active');
 };
 
-//Contact-Me form validation
-
-$(document).ready(function(){
-    $("#submit-form").validate({
-        rules:{
-            FullName:{
-                required:true,
-                minlength:4
-            },
-            Email:{
-                required:true,
-                email: true
-            },
-            Phone:{
-                required:true,
-                minlength:10
-            },
-            Message:{
-                required:true
-            }
-        }
-    })
-})
-
 //Contact-Me form submission
 
 $("#submit-form").submit((e)=>{
