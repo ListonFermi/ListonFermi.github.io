@@ -635,10 +635,16 @@ section{
 
 /* BREAKPOINTS */
 
+
+
 @media (max-width: 1200px){
     html{
         font-size: 55%;
     }
+    .home{
+        background-image: none;
+    }
+    
 }
 
 @media (max-width: 1000px){
