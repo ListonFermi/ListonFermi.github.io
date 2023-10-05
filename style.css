@@ -109,7 +109,7 @@ section{
 .home-content .text-animate h3{
     font-size: 3.2rem;
     font-weight: 700;
-    /* color: transparent; */
+    color: var(--main-color); 
     -webkit-text-stroke: .7px var(--main-color) ;
     background-image: linear-gradient(var(--main-color)), var(--main-color);
     background-repeat: no-repeat;
@@ -119,16 +119,6 @@ section{
     animation-delay: 2s;
 }
 
-.home-content .text-animate h3::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    border-right: 2px solid var(--main-color);
-    z-index: -1;
-}
 
 .home-content p{
     font-size: 1.6rem;
@@ -225,19 +215,6 @@ section{
     width: 100%;
 }
 
-.home-imgHover {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 45%;
-    height: 100%;
-    background: transparent;
-}
-
-.home-imgHover:hover{
-    background: var(--bg-color);
-    opacity: .25;
-}
 
 .about{
     display: flex;
