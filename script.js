@@ -1,8 +1,8 @@
 
-window.onscroll=()=>{
-    let header=document.querySelector('header');
-    header.classList.toggle('sticky', window.scrollY > 100)
-}
+// window.onscroll=()=>{
+//     let header=document.querySelector('header');
+//     header.classList.toggle('sticky', window.scrollY > 100)
+// }
 
 // toggle icon and nav bar
 
