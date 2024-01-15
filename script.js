@@ -29,7 +29,6 @@ $("#submit-form").submit((e)=>{
         },
         error:function (err){
             alert("Something Error")
-
         }
     })
 })
