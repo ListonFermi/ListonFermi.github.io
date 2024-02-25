@@ -25,10 +25,16 @@ $("#submit-form").submit((e)=>{
         success:function (response){
             alert("Form submitted successfully")
             window.location.reload()
-            //window.location.href="https://google.com"
         },
         error:function (err){
             alert("Something Error")
         }
     })
 })
+
+//Current year in footer
+
+const yearElement= document.getElementById('year')
+const currentYear= new Date().getFullYear()
+
+yearElement.innerText= `Copyright © ${currentYear} by Liston Fermi`
