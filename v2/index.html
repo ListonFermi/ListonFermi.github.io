@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liston Fermi — Backend engineer working with Node.js and PostgreSQL.">
+    <meta name="author" content="Liston Fermi">
+    <title>Liston Fermi</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@400;700&family=Poppins:wght@400;600&family=Roboto+Mono:wght@400;500&family=Space+Grotesk:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="page">
+        <!-- Top block: name sits near the top, content flows beneath it -->
+        <div class="top">
+            <h1 class="name">Liston Fermi</h1>
+
+            <div class="bio">
+                <p>Backend engineer. I work with Node.js and PostgreSQL &mdash; building APIs and services.</p>
+                <p>Currently at a fullstack boutique agency, shipping production systems across multiple projects.</p>
+            </div>
+
+            <section class="tech">
+                <p class="tech-label">Tech I use day to day</p>
+                <div class="tech-icons">
+                    <div class="tech-item">
+                        <img src="icons/typescript.svg" alt="TypeScript">
+                        <span>TypeScript</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="icons/nodejs.svg" alt="Node.js">
+                        <span>Node.js</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="icons/postgresql.svg" alt="PostgreSQL">
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tech">
+                <p class="tech-label">Things I&rsquo;ve touched</p>
+                <div class="tech-icons">
+                    <div class="tech-item">
+                        <img src="icons/react.svg" alt="React">
+                        <span>React</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="icons/nextjs.svg" alt="Next.js">
+                        <span>Next.js</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="icons/mongodb.svg" alt="MongoDB">
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="icons/aws.svg" alt="AWS">
+                        <span>AWS</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Bottom block: links stick near the bottom, controls sit below them -->
+        <div class="bottom">
+            <nav class="links" aria-label="Profiles">
+                <a href="#" target="_blank" rel="noopener">blog</a>
+                <span class="sep">|</span>
+                <a href="https://x.com/ListonFermi" target="_blank" rel="noopener">twitter</a>
+                <span class="sep">|</span>
+                <a href="https://www.linkedin.com/in/listonfermi/" target="_blank" rel="noopener">linkedin</a>
+                <span class="sep">|</span>
+                <a href="https://github.com/ListonFermi" target="_blank" rel="noopener">github</a>
+                <span class="sep">|</span>
+                <a href="/v1/">Old Portfolio</a>
+            </nav>
+
+            <div class="controls">
+                <select id="font-select" class="picker" aria-label="Select font">
+                    <option value="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">System</option>
+                    <option value="'Inter', sans-serif">Inter</option>
+                    <option value="'Poppins', sans-serif">Poppins</option>
+                    <option value="'Space Grotesk', sans-serif">Space Grotesk</option>
+                    <option value="'Roboto Mono', monospace">Roboto Mono</option>
+                    <option value="'Merriweather', serif">Merriweather</option>
+                </select>
+
+                <!-- Gradient colour pickers (options populated by JS per theme) -->
+                <select id="color1-select" class="picker" aria-label="Gradient colour 1"></select>
+                <select id="color2-select" class="picker" aria-label="Gradient colour 2"></select>
+
+                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle light/dark theme">
+                    <!-- Sun: shown in dark mode (click to go light) -->
+                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+                    </svg>
+                    <!-- Moon: shown in light mode (click to go dark) -->
+                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

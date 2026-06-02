@@ -1,0 +1,40 @@
+
+// window.onscroll=()=>{
+//     let header=document.querySelector('header');
+//     header.classList.toggle('sticky', window.scrollY > 100)
+// }
+
+// toggle icon and nav bar
+
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menuIcon.onclick= () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+};
+
+//Contact-Me form submission
+
+$("#submit-form").submit((e)=>{
+    e.preventDefault()
+    $.ajax({
+        url:"https://script.google.com/macros/s/AKfycbzOsjRck7maH-9CA-ggtilJgbTkgqId54-nRiouxkPoTRuftqZhMGhK04oO9R22FsHnsQ/exec",
+        data:$("#submit-form").serialize(),
+        method:"post",
+        success:function (response){
+            alert("Form submitted successfully")
+            window.location.reload()
+        },
+        error:function (err){
+            alert("Something Error")
+        }
+    })
+})
+
+//Current year in footer
+
+const yearElement= document.getElementById('year')
+const currentYear= new Date().getFullYear()
+
+yearElement.innerText= `Copyright © ${currentYear} by Liston Fermi`
